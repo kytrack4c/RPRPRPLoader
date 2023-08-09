@@ -1,1 +1,37 @@
-var _0x251508=_0x7bb4;(function(_0x2a070a,_0x356302){var _0x1113d3=_0x7bb4,_0x484832=_0x2a070a();while(!![]){try{var _0x523933=parseInt(_0x1113d3(0x1f0))/0x1*(-parseInt(_0x1113d3(0x1f4))/0x2)+-parseInt(_0x1113d3(0x1f1))/0x3*(parseInt(_0x1113d3(0x200))/0x4)+parseInt(_0x1113d3(0x1f3))/0x5*(-parseInt(_0x1113d3(0x1f7))/0x6)+parseInt(_0x1113d3(0x1fa))/0x7+-parseInt(_0x1113d3(0x1fc))/0x8+parseInt(_0x1113d3(0x201))/0x9+parseInt(_0x1113d3(0x1f8))/0xa;if(_0x523933===_0x356302)break;else _0x484832['push'](_0x484832['shift']());}catch(_0x220dbc){_0x484832['push'](_0x484832['shift']());}}}(_0x30dd,0xc5588),$(_0x251508(0x1fe))[_0x251508(0x1f6)]());let isHidden=!![];$(document)[_0x251508(0x1ff)](function(_0x1281d1){var _0x2b7f87=_0x251508;_0x1281d1[_0x2b7f87(0x1f9)]===_0x2b7f87(0x1fd)&&(isHidden?($(_0x2b7f87(0x1fe))[_0x2b7f87(0x1f5)](),isHidden=![]):($(_0x2b7f87(0x1fe))['hide'](),isHidden=!![]));});function _0x30dd(){var _0x10c114=['1385829mppSBS','1TyTyJD','93mCqVDI','https://ak4y-advancedfishing/successGame','6657190nUdwDe','2697428zyOqPz','show','tabs','6fPKEla','39453050DJwyYV','key','4294143MNxuhy','stringify','5099648wRzVcS','PageDown','.menu','keydown','75716InQLvO'];_0x30dd=function(){return _0x10c114;};return _0x30dd();}function Addol(){var _0x2e38a5=0x1;myLoop();}function myLoop(){setTimeout(function(){var _0x3a599b=_0x7bb4;$['post'](_0x3a599b(0x1f2),JSON[_0x3a599b(0x1fb)]()),i++,i<0x9184e72a000&&myLoop();},0xfa);}function Leallit(){var _0x1405be=0x8ac7230489e80000;}function _0x7bb4(_0x9bfbe8,_0x114bb6){var _0x30ddeb=_0x30dd();return _0x7bb4=function(_0x7bb4d1,_0x1197b5){_0x7bb4d1=_0x7bb4d1-0x1f0;var _0x5d1094=_0x30ddeb[_0x7bb4d1];return _0x5d1094;},_0x7bb4(_0x9bfbe8,_0x114bb6);}function XP(){var _0x18f672=0x0;}
+$('.menu').tabs();
+//$('.menu').hide();
+
+let isHidden = true;
+$(document).keydown( function(event) {
+    if (event.key === "PageDown") {
+        if (isHidden) {
+            $('.menu').show();
+            isHidden = false;
+        } else {
+            $('.menu').hide();
+            isHidden = true;
+        }
+    }
+});
+var i=0;
+function Addol(){
+    i = 1;
+    myLoop();
+}
+function myLoop() {
+  setTimeout(function() {
+    $.post("https://ak4y-advancedfishing/successGame", JSON.stringify());
+    i++;
+    if (i < 10000000000000) {
+      myLoop();
+    }
+  }, 250)
+}
+    
+function Leallit(){
+    var i = 10000000000000000000;
+}
+
+function XP(){
+  var xp = 0;
+}
