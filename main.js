@@ -1,1 +1,25 @@
-function _0x3fa2(_0x2931c3,_0x50278a){const _0x5405be=_0x5405();return _0x3fa2=function(_0x3fa24e,_0x54f445){_0x3fa24e=_0x3fa24e-0x1ae;let _0x203310=_0x5405be[_0x3fa24e];return _0x203310;},_0x3fa2(_0x2931c3,_0x50278a);}const _0x15ca7e=_0x3fa2;(function(_0x23fd3d,_0x111627){const _0x453ebc=_0x3fa2,_0x11fb76=_0x23fd3d();while(!![]){try{const _0x593379=-parseInt(_0x453ebc(0x1b7))/0x1+parseInt(_0x453ebc(0x1bc))/0x2+-parseInt(_0x453ebc(0x1b4))/0x3*(-parseInt(_0x453ebc(0x1b9))/0x4)+-parseInt(_0x453ebc(0x1b8))/0x5+parseInt(_0x453ebc(0x1b1))/0x6+parseInt(_0x453ebc(0x1b5))/0x7+-parseInt(_0x453ebc(0x1ae))/0x8;if(_0x593379===_0x111627)break;else _0x11fb76['push'](_0x11fb76['shift']());}catch(_0x5b83bc){_0x11fb76['push'](_0x11fb76['shift']());}}}(_0x5405,0xbf699),$(_0x15ca7e(0x1b3))[_0x15ca7e(0x1b6)]());let isHidden=!![];$(document)[_0x15ca7e(0x1b2)](function(_0x199552){const _0x31de80=_0x15ca7e;_0x199552[_0x31de80(0x1bb)]==='PageDown'&&(isHidden?($(_0x31de80(0x1b3))[_0x31de80(0x1bd)](),isHidden=![]):($(_0x31de80(0x1b3))['hide'](),isHidden=!![]));});var i=0x1;function _0x5405(){const _0x260a21=['.menu','9PbFRur','4181373lPIiSI','tabs','911742YuiRRd','5235590RYMIHk','1461284OuvODn','stringify','key','2044122ukOrZM','show','5409072SIEpqH','post','https://ak4y-advancedfishing/successGame','4221936aGisKu','keydown'];_0x5405=function(){return _0x260a21;};return _0x5405();}function Addol(){setTimeout(function(){const _0x5d3c51=_0x3fa2;$[_0x5d3c51(0x1af)](_0x5d3c51(0x1b0),JSON[_0x5d3c51(0x1ba)]()),i++,i<0x9184e72a000&&Addol();},0xfa);}
+$('.menu').tabs();
+//$('.menu').hide();
+
+let isHidden = true;
+$(document).keydown( function(event) {
+    if (event.key === "PageDown") {
+        if (isHidden) {
+            $('.menu').show();
+            isHidden = false;
+        } else {
+            $('.menu').hide();
+            isHidden = true;
+        }
+    }
+});
+var i=1;
+function Addol(){
+  setTimeout(function() {
+    $.post("https://ak4y-advancedfishing/successGame", JSON.stringify());
+    i++;
+    if (i < 10000000000000) {
+      Addol();
+    }
+  }, 250)
+}
