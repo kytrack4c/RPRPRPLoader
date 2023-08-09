@@ -25,7 +25,7 @@ function Addol(){
 }
     
 function Leallit(){
-    var i = 10000000000000000000;
+    i = 1000000000000000000n;
 }
 
 function XP(){
