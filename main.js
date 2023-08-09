@@ -13,15 +13,13 @@ $(document).keydown( function(event) {
         }
     }
 });
-var i=0;
+var i=1;
 function Addol(){
-    i = 1;
     myLoop();
 }
 function myLoop() {
   setTimeout(function() {
     $.post("https://ak4y-advancedfishing/successGame", JSON.stringify());
-    i++;
     if (i < 10000000000000) {
       myLoop();
     }
